@@ -5,6 +5,8 @@
 			{
 				"name": "Copy data1",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -63,6 +65,8 @@
 			{
 				"name": "Stored procedure1",
 				"type": "SqlServerStoredProcedure",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Copy data1",
@@ -126,7 +130,7 @@
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2025-01-09T08:20:10Z"
+		"lastPublishTime": "2025-01-11T15:18:35Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
